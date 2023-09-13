@@ -1,0 +1,21 @@
+.collection {
+    
+    .collection-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        .collection-item {
+           
+            
+            .link-photo {
+
+                img {
+                    
+                    height: 478px;
+                }
+            }
+            
+        }
+    }
+
+    
+}

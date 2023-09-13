@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="burger">
+                <div class="burger-btn">Меню</div>
+                <div class="burger-menu">
+                    <ul>
+                        <li class="current-menu-item">
+                            <a href="">Головна</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Магазин</a>
+                            <ul>
+                                <li>
+                                    <a href="">Пальто</a>
+                                </li>
+                                <li>
+                                    <a href="">Світшоти</a>
+                                </li>
+                                <li>
+                                    <a href="">Кардигани</a>
+                                </li>
+                                <li>
+                                    <a href="">Толстовки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about-brand.html">Про бренд</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li class="current-menu-item">
+                        <a href="main.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="about-brand.html">Про бренд</a>
+
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="call">
+                <svg class="icon tel-icon">
+                    <use xlink:href="img/sprite.svg#tel"></use>
+                </svg>
+                <a href="+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+            </div>
+            <div class="cart-container">
+                <div class="cart-btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#bag"></use>
+                    </svg>
+                    <div class="cart-count">1</div>
+                </div>
+                <div class="cart-block">
+                    <h3 class="cart-block-title">Кошик</h3>
+                    <div class="close-cart js-close-cart">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="cart-products">
+                        <li class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="img/good3.jpg" alt="">
+                            </div>
+                            <div class="cart-item-info">
+                                <h4 class="cart-title">Купальник Glow</h4>
+                                <div class="cart-quantity">
+                                    <div class="quantity-minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" min="1" step="1" value="1" class="quantity-number">
+                                    <div class="quantity-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <span class="cart-price">$129</span>
+                                <div class="cart-remove">Видалити</div>
+                            </div>
+                        </li>
+                        <li class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="img/good1.jpg" alt="">
+                            </div>
+                            <div class="cart-item-info">
+                                <h4 class="cart-title">Купальник Glow</h4>
+                                <div class="cart-quantity">
+                                    <div class="quantity-minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" min="1" step="1" value="1" class="quantity-number">
+                                    <div class="quantity-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <span class="cart-price">$129</span>
+                                <div class="cart-remove">Видалити</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-footer">
+                        <div class="cart-footer-content">
+                            <h4>Разом :</h4>
+                            <span class="sum">$129</span>
+                        </div>
+                        <div class="cart-footer-btns">
+                            <div class="btn-show-bag">
+                                <a href="form.html">Переглянути кошик</a>
+                            </div>
+                            <div class="btn-purchase">
+                                <a href="">Перейти до оплати</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bg"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="intro-wrapper">
+                <div class="left-side">
+                    <div class="container">
+                        <ul class="intro-list">
+                            <li class="intro-item">
+                                <div class="intro-photo">
+                                    <img src="img/intro1.jpg" alt="" class="mob-img">
+                                    <img src="img/intro1.jpg" alt="" class="tab-img">
+                                    <img src="img/intro1.jpg" alt="" class="desktop-img">
+                                </div>
+                                <div class="intro-info">
+                                    <h2 class="intro-title">Нові надходження цього сезону</h2>
+                                    <p class="intro-text">Витончені поєднання та оксамитові відтінки - 
+                                        ось те, що ви шукали цього сезону. Час досліджувати.
+                                    </p>
+                                    <div class="intro-btns">
+                                        <div class="btn-arrow">
+                                            <a href="">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="btn-shop">
+                                            <a href="">До магазину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="intro-item">
+                                <div class="intro-photo">
+                                    <img src="img/intro2.jpg" alt="" class="mob-img">
+                                    <img src="img/intro2.jpg" alt="" class="tab-img">
+                                    <img src="img/intro2.jpg" alt="" class="desktop-img">
+                                </div>
+                                <div class="intro-info">
+                                    <h2 class="intro-title">Щось новеньке. Ми зачекалися на тебе.</h2>
+                                    <p class="intro-text">Набридло шукати себе в сірому місті? 
+                                        Настав час нових ідей, свіжих фарб та натхнення з Womazing!
+                                    </p>
+                                    <div class="intro-btns">
+                                        <div class="btn-arrow">
+                                            <a href="">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="btn-shop">
+                                            <a href="">До магазину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="intro-item">
+                                <div class="intro-photo">
+                                    <img src="img/intro3.jpg" alt="" class="mob-img">
+                                    <img src="img/intro3.jpg" alt="" class="tab-img">
+                                    <img src="img/intro3.jpg" alt="" class="desktop-img">
+                                </div>
+                                <div class="intro-info">
+                                    <h2 class="intro-title">Включай новий сезон з WOMAZING</h2>
+                                    <p class="intro-text">Ми оновили асортимент - легендарні колекції 
+                                        та новинки від вітчизняних дизайнерів
+                                    </p>
+                                    <div class="intro-btns">
+                                        <div class="btn-arrow">
+                                            <a href="">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="btn-shop">
+                                            <a href="">До магазину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="slider-nav">
+                            <div class="slider-nav__item"></div>
+                            <div class="slider-nav__item"></div>
+                            <div class="slider-nav__item"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="right-side"> -->
+                    <!-- <div class="intro-photo"> -->
+                        <!-- <ul class="photo-list">
+                            <li class="photo-item">
+                                <img src="img/intro1.jpg" alt="">
+                            </li>
+                            <li class="photo-item">
+                                <img src="img/intro2.jpg" alt="">
+                            </li>
+                            <li class="photo-item">
+                                <img src="img/intro3.jpg" alt="">
+                            </li>
+                        </ul> -->
+                        <!-- <div class="intro-bg"></div>
+                        <div class="left-photo">
+                            <img src="img/left.jpg" alt="">
+                        </div>
+                        <div class="right-photo">
+                            <img src="img/right.jpg" alt="">
+                        </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            </div>                          
+        </section>
+        <section class="collection">
+            <div class="container">
+                <h2 class="collection-title">Нова колекція</h2>
+                <ul class="collection-list">
+                    <li class="collection-item">
+                        <a href="product-card.html" class="link-photo">
+                            <div class="overlay">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <img src="img/good1.jpg" alt="">
+                        </a>
+                        <h3 class="item-title">
+                            <a href="" class="link-title">
+                                Футболка USA
+                            </a>
+                        </h3>
+                        
+                        <div class="prices">
+                            <span class="old-price">$229</span>
+                            <div class="new-price">$129</div>
+                        </div>
+                    </li>
+                    <li class="collection-item">
+                        <a href="product-card.html" class="link-photo">
+                            <div class="overlay">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <img src="img/good2.jpg" alt="">
+                        </a>
+                        <h3 class="item-title">
+                            <a href="" class="link-title">
+                            Купальник Glow
+                            </a>
+                        </h3>
+                        <div class="prices">
+                            <span class="old-price">$229</span>
+                            <div class="new-price">$129</div>
+                        </div>
+                    </li>
+                    <li class="collection-item" >
+                        <a href="product-card.html" class="link-photo">
+                            <div class="overlay">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <img src="img/good3.jpg" alt="">
+                        </a>
+                        <h3 class="item-title">
+                            <a href="" class="link-title">
+                                Свитшот Sweet Shot
+                            </a>
+                        </h3>
+                        <div class="prices">
+                            <span class="old-price">$229</span>
+                            <div class="new-price">$129</div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="" class="collection-btn">До магазину</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about-title">Що для нас важливо</h2>
+                <ul class="about-list">
+                    <li class="about-item">
+                        <img src="img/about1.png" alt="" class="about-item__image">
+                        <h3 class="about-item__title">Якість</h3>
+                        <p class="about-item__text">
+                            Наші професіонали працюють на найкращому 
+                            устаткуванні для пошиття одягу безпрецедентної 
+                            якості
+                        </p>
+                    </li>
+                    <li class="about-item">
+                        <img src="img/about2.png" alt="" class="about-item__image">
+                        <h3 class="about-item__title">Швидкість</h3>
+                        <p class="about-item__text">
+                            Завдяки налагодженій системі у Womazing 
+                            ми можемо відшивати до 20 одиниць продукції 
+                            у наших власних цехах.
+                        </p>
+                    </li>
+                    <li class="about-item">
+                        <img src="img/about3.png" alt="" class="about-item__image">
+                        <h3 class="about-item__title">Відповідальність</h3>
+                        <p class="about-item__text">
+                            Ми дбаємо про людей та планету. Безвідходне 
+                            виробництво та комфортні умови праці - все 
+                            це Womazing
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2 class="team-title">Команда мрії Womazing</h2>
+                <div class="team-wrapper">
+                    <div class="photo-wrapper">
+                        <div class="controls-team">
+                            <div class="arrows left-arrow">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#l-arrow-team"></use>
+                                  </svg>
+                            </div>
+                            <div class="arrows right-arrow">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#r-arrow-team"></use>
+                                  </svg>
+                            </div>
+                        </div>
+                        <ul class="team-photo">
+                            <li class="photo-item">
+                                <img src="img/team1.jpg" alt="">
+                            </li>
+                            <li class="photo-item">
+                                <img src="img/team2.jpg" alt="">
+                            </li>
+                            <li class="photo-item">
+                                <img src="img/team3.jpg" alt="">
+                            </li>
+                        </ul>
+                        <div class="nav-team">
+                            <div class="nav-team__item"></div>
+                            <div class="nav-team__item"></div>
+                            <div class="nav-team__item"></div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="team-info">
+                        <h3 class="team-info__title">Для кожної</h3>
+                        <p class="first-text">Кожна дівчина є унікальною. 
+                            Однак, ми схожі на мільйон дрібниць.
+                        </p>
+                        <p class="second-text">Womazing шукає ці дрібниці та створює 
+                            чудові речі, які вигідно підкреслюють 
+                            переваги кожної дівчини.
+                        </p>
+                        <a href="" class="team-link">Детальніше про бренд</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="" class="logo-link">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="footer-content__wrapper">
+                    <p>© Усі права захищені</p>
+                    <div class="content-links">
+                        <ul>
+                            <li><a href="">Політика конфіденційності</a></li>
+                            <li><a href="">Публічна оферта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li class="current-menu-item">
+                        <a href="">Головна</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                        <!-- <ul>
+                            <li>
+                                <a href="">Пальто</a>
+                            </li>
+                            <li>
+                                <a href="">Світшоти</a>
+                            </li>
+                            <li>
+                                <a href="">Кардигани</a>
+                            </li>
+                            <li>
+                                <a href="">Толстовки</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="about-brand.html">Про бренд</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="contacts-links">
+                    <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                    <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="payment">
+                    <img src="img/visa-mastercard.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

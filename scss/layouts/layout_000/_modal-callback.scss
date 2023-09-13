@@ -1,0 +1,85 @@
+.modal-callback {
+    position: fixed;
+    z-index: 7;
+    display: none;
+    top: 50px;
+    left: 50%;
+    right: -40%;
+    transform: translateX(-50%);
+    max-width: 555px;
+    padding: 68px 70px 64px;
+    background-color: $white;
+
+    .callback-title {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 500;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .fa-xmark {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .callback-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            &::placeholder {
+                font-size: 17px;
+                font-family: $fontRaleway;
+                font-weight: 500;
+                color: #868686;
+            }
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $black;
+            height: 40px;
+            font-weight: 500;
+            outline: none;
+            margin-bottom: 35px;
+            font-size: 17px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 22px 50px;
+            width: 100%;
+            background-color: $green;
+            color: $white;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border: none;
+        }
+    }
+}
+
+.modal-callback-open {
+    display: block;
+}
+
+.green-bg {
+    display: none;
+    position: fixed;
+    background-color: #6E9C9FF2;
+    opacity: 0.95;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+    cursor: pointer;
+}
+
+.green-bg-open {
+    display: block;
+}
+

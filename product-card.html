@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="burger">
+                <div class="burger-btn">Меню</div>
+                <div class="burger-menu">
+                    <ul>
+                        <li>
+                            <a href="main.html">Головна</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Магазин</a>
+                            <ul>
+                                <li>
+                                    <a href="">Пальто</a>
+                                </li>
+                                <li>
+                                    <a href="">Світшоти</a>
+                                </li>
+                                <li>
+                                    <a href="">Кардигани</a>
+                                </li>
+                                <li>
+                                    <a href="">Толстовки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about-brand.html">Про бренд</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="about-brand.html">Про бренд</a>
+
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="call">
+                <svg class="icon tel-icon">
+                    <use xlink:href="img/sprite.svg#tel"></use>
+                </svg>
+                <a href="+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+            </div>
+            <div class="cart-container">
+                <div class="cart-btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#bag"></use>
+                    </svg>
+                    <div class="cart-count">1</div>
+                </div>
+                <!-- popup cart -->
+                <div class="cart-block">
+                    <h3 class="cart-block-title">Кошик</h3>
+                    <div class="close-cart js-close-cart">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="cart-products">
+                        <li class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="img/good3.jpg" alt="">
+                            </div>
+                            <div class="cart-item-info">
+                                <h4 class="cart-title">Купальник Glow</h4>
+                                <div class="cart-quantity">
+                                    <div class="quantity-minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" min="1" step="1" value="1" class="quantity-number">
+                                    <div class="quantity-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <span class="cart-price">$129</span>
+                                <div class="cart-remove">Видалити</div>
+                            </div>
+                        </li>
+                        <li class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="img/good1.jpg" alt="">
+                            </div>
+                            <div class="cart-item-info">
+                                <h4 class="cart-title">Купальник Glow</h4>
+                                <div class="cart-quantity">
+                                    <div class="quantity-minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" min="1" step="1" value="1" class="quantity-number">
+                                    <div class="quantity-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <span class="cart-price">$129</span>
+                                <div class="cart-remove">Видалити</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-footer">
+                        <div class="cart-footer-content">
+                            <h4>Разом :</h4>
+                            <span class="sum">$129</span>
+                        </div>
+                        <div class="cart-footer-btns">
+                            <div class="btn-show-bag">
+                                <a href="form.html">Переглянути кошик</a>
+                            </div>
+                            <div class="btn-purchase">
+                                <a href="">Перейти до оплати</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bg"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="product-card">
+            <div class="container">
+                <div class="product-card-header">
+                    <h3>Кардиган Dressa</h3>
+                    <div class="crumbs">
+                        <div class="crumbs-item"><a href="#">Головна</a></div>
+                        <div class="crumbs-item crumbs-decorate"></div>
+                        <div class="crumbs-item"><a href="#">Всі</a></div>
+                        <div class="crumbs-item crumbs-decorate"></div>
+                        <div class="crumbs-item"><a href="#">Кардиган Dressa</a></div>
+                    </div>
+                </div>
+                <div class="product-card-wrapper">
+                    <div class="product-image-side">
+                        <div class="product-images-wrapper">
+                            <div class="splide product-gallery">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="images-item splide__slide">
+                                            <img src="img/good1.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/good2.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/good3.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/intro3.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/intro1.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="splide product-gallery__thumbs">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="images-item splide__slide">
+                                            <img src="img/good1.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/good2.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/good3.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/intro3.jpg" alt="">
+                                        </li>
+                                        <li class="images-item splide__slide">
+                                            <img src="img/intro1.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <!-- <h2 class="product-card-title">Кардиган Dressa</h2> -->
+                        <div class="prices">
+                            <div class="new-price">$129</div>
+                            <span class="old-price">$229</span>
+                        </div>
+                        <form action="#">
+                            <div class="product-card-sizes">
+                                <h3>Виберіть розмір</h3>
+                                <ul class="sizes-list">
+                                    <li class="sizes-item">
+                                        <input type="radio" name="size" id="xs" class="radio-label">
+                                        <label for="xs" class="sizes xs">XS</label>
+                                    </li>
+                                    <li class="sizes-item">
+                                        <input type="radio" name="size" id="s" class="radio-label">
+                                        <label for="s" class="sizes s">S</label>
+                                    </li>
+                                    <li class="sizes-item">
+                                        <input type="radio" name="size" id="m" class="radio-label">
+                                        <label for="m" class="sizes m">M</label>
+                                    </li>
+                                    <li class="sizes-item">
+                                        <input type="radio" name="size" id="l" class="radio-label">
+                                        <label for="l" class="sizes l">L</label>
+                                    </li>
+                                    <li class="sizes-item">
+                                        <input type="radio" name="size" id="xl" class="radio-label">
+                                        <label for="xl" class="sizes xl">XL</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product-card-colors">
+                                <h3>Виберіть колір</h3>
+                                <ul class="colors-list">
+                                    <li class="colors-item">
+                                        <input type="radio" id="brown-color" name="color" class="radio-label">
+                                        <label for="brown-color" class="colors brown" style="background-color: #927876;"></label>
+                                    </li>
+                                    <li class="colors-item">
+                                        <input type="radio" id="yellow-color" name="color" class="radio-label">
+                                        <label for="yellow-color" class="colors yellow" style="background-color: #FDC796;"></label>
+                                    </li>
+                                    <li class="colors-item">
+                                        <input type="radio" id="black-color" name="color" class="radio-label">
+                                        <label for="black-color" class="colors black" style="background-color: #000;"></label>
+                                    </li>
+                                    <li class="colors-item">
+                                        <input type="radio" id="red-color" name="color" class="radio-label">
+                                        <label for="red-color" class="colors red" style="background-color: red;"></label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="product-card-btns">
+                                <div class="product-card-quantity">
+                                    <span class="plus">+</span>
+                                    <input type="number" class="quantity-card" step="1" min="1" max="" value="1">
+                                    <span class="minus">-</span>
+                                </div>
+                                <div class="purchase-btns">
+                                    <button type="submit" class="add-btn">Додати до кошика</button>
+                                    <button type="submit" class="purchase-onclick">Купити в один клік</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="woocommerce-tabs">
+                            <ul class="tabs-list">
+                                <li class="tabs-item">
+                                    <div class="item-top">
+                                        <h4>Додаткова інформація</h4>
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item-bottom-wrapper">
+                                            <p>Колір: білий, жовтий, червоний, чорний</p>
+                                            <p>Розмір: xs, s, m, l, xl</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tabs-item">
+                                    <div class="item-top">
+                                        <h4>Відгуки (0)</h4>
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </div>
+                                    <div class="item-bottom">
+                                        <div class="item-bottom-wrapper">
+                                            <p>Відгуків немає, поки що.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="similar-products">
+            <div class="container">
+                <h2 class="similar-title">Схожі товари</h2>
+                <ul class="similar-list">
+                    <li class="similar-item">
+                        <a href="" class="link-photo">
+                            <div class="overlay">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <img src="img/good1.jpg" alt="">
+                        </a>
+                        <h3 class="item-title">
+                            <a href="" class="link-title">
+                                Футболка USA
+                            </a>
+                        </h3>
+                        
+                        <div class="prices">
+                            <span class="old-price">$229</span>
+                            <div class="new-price">$129</div>
+                        </div>
+                    </li>
+                    <li class="similar-item">
+                        <a href="" class="link-photo">
+                            <div class="overlay">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </div>
+                            <img src="img/good2.jpg" alt="">
+                        </a>
+                        <h3 class="item-title">
+                            <a href="" class="link-title">
+                                Футболка USA
+                            </a>
+                        </h3>
+                        
+                        <div class="prices">
+                            <span class="old-price">$229</span>
+                            <div class="new-price">$129</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+</section>
+    </main>
+    <div class="modal-callback">
+        <h3 class="callback-title">Замовити зворотний дзвінок</h3>
+        <i class="fa-solid fa-xmark"></i>
+        <form action="#" class="callback-form">
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Телефон" required>
+            <button type="submit">Замовити Дзвінок</button>
+        </form>
+    </div>
+    <div class="modal-answer">
+        <h3 class="answer-title">Чудово! Ми незабаром вам передзвонимо.</h3>
+        <div class="answer-button">Закрити</div>
+    </div>
+    <div class="green-bg"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="" class="logo-link">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="footer-content__wrapper">
+                    <p>© Усі права захищені</p>
+                    <div class="content-links">
+                        <ul>
+                            <li><a href="">Політика конфіденційності</a></li>
+                            <li><a href="">Публічна оферта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                        <!-- <ul>
+                            <li>
+                                <a href="">Пальто</a>
+                            </li>
+                            <li>
+                                <a href="">Світшоти</a>
+                            </li>
+                            <li>
+                                <a href="">Кардигани</a>
+                            </li>
+                            <li>
+                                <a href="">Толстовки</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="about-brand.html">Про бренд</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="contacts-links">
+                    <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                    <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="payment">
+                    <img src="img/visa-mastercard.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="fast-purchase">
+        <div class="fast-purchase-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="fast-purchase-title">Швидке замовлення</div>
+        <div class="fast-purchase-content">
+            <div class="fast-purchase-product">
+                <div class="fast-product-image">
+                    <img src="img/good1.jpg" alt="">
+                </div>
+                <div class="fast-product-info">
+                    <h3 class="fast-product-title">Футболка USA</h3>
+                    <div class="fast-product-size">
+                        <div class="size-title">Розмір:</div>
+                        <span class="client-size">S</span>
+                    </div>
+                    <div class="fast-product-color">
+                        <div class="color-title">Колір:</div>
+                        <span class="client-color"></span>
+                    </div>
+                    <div class="fast-product-price">
+                        $129
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="ПІБ" class="ons">
+                <input type="text" placeholder="Номер телефону">
+                <button type="submit" class="fast-purchase-btn">Замовити</button>
+            </form>
+        </div>
+    </div>
+    <div class="fast-bg"></div>
+    <div class="thank-modal">
+        <h3 class="thank-modal-title">Чудово! Ми незабаром вам передзвонимо.</h3>
+        <div class="thank-close-btn">Закрити</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/slider-card.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

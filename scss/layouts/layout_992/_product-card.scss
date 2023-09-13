@@ -1,0 +1,51 @@
+.product-card {
+
+    .product-card-wrapper {
+
+        
+
+        .product-images-wrapper {
+            max-width: 450px;
+            
+        }
+
+        .product-card-content {
+            align-items: flex-start;
+
+            form {
+
+                
+
+                .product-card-btns {
+                    align-items: flex-start;
+
+                    button {
+                        padding: 22px 50px;
+                        
+                    }
+
+                    .purchase-btns {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        button {
+                            width: unset;
+                        }
+
+                        .add-btn {
+                            margin-bottom: 0px;
+                            margin-right: 10px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fast-purchase {
+    top: 100px;
+}
+

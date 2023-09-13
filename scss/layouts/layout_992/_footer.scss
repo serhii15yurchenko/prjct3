@@ -1,0 +1,22 @@
+.footer {
+    
+
+    
+
+    .footer-menu {
+
+        ul {
+            
+                
+            li {
+                &:not(:last-child) {
+                    margin-right: 45px;
+                }
+ 
+            }
+            
+        }
+    }
+
+    
+}

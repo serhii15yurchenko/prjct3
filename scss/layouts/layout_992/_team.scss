@@ -1,0 +1,57 @@
+.team {
+    
+
+
+    
+
+    .team-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        
+        .photo-wrapper {
+            max-width: 629px;
+            margin-right: 50px;
+            padding: 0 25px;
+
+            .controls-team {
+                display: flex;
+                
+
+                .left-arrow {
+                    left: -15px;
+                    padding-left: 5px;
+                }
+
+                .right-arrow {
+
+                    left: 614px;
+                }
+            }
+            
+        }
+
+        .team-info {
+            margin-top: 0px;
+            align-items: flex-start;
+            max-width: 255px;
+            &__title {
+                
+                text-align: left;
+            }
+    
+            .first-text {
+                
+                text-align: left;
+            }
+    
+            .second-text {
+                
+                text-align: left;
+            }
+    
+            
+        }
+    }
+
+    
+}

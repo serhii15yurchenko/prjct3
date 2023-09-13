@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="burger">
+                <div class="burger-btn">Меню</div>
+                <div class="burger-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Магазин</a>
+                            <ul>
+                                <li>
+                                    <a href="">Пальто</a>
+                                </li>
+                                <li>
+                                    <a href="">Світшоти</a>
+                                </li>
+                                <li>
+                                    <a href="">Кардигани</a>
+                                </li>
+                                <li>
+                                    <a href="">Толстовки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about-brand.html">Про бренд</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="about-brand.html">Про бренд</a>
+
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="call">
+                <svg class="icon tel-icon">
+                    <use xlink:href="img/sprite.svg#tel"></use>
+                </svg>
+                <a href="+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+            </div>
+            <div class="cart-container">
+                <div class="cart-btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#bag"></use>
+                    </svg>
+                    <div class="cart-count">1</div>
+                </div>
+                <!-- popup cart -->
+                <div class="cart-block">
+                    <h3 class="cart-block-title">Кошик</h3>
+                    <div class="close-cart js-close-cart">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <ul class="cart-products">
+                        <li class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="img/good3.jpg" alt="">
+                            </div>
+                            <div class="cart-item-info">
+                                <h4 class="cart-title">Купальник Glow</h4>
+                                <div class="cart-quantity">
+                                    <div class="quantity-minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" min="1" step="1" value="1" class="quantity-number">
+                                    <div class="quantity-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <span class="cart-price">$129</span>
+                                <div class="cart-remove">Видалити</div>
+                            </div>
+                        </li>
+                        <li class="cart-item">
+                            <div class="cart-item-image">
+                                <img src="img/good1.jpg" alt="">
+                            </div>
+                            <div class="cart-item-info">
+                                <h4 class="cart-title">Купальник Glow</h4>
+                                <div class="cart-quantity">
+                                    <div class="quantity-minus">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <input type="number" min="1" step="1" value="1" class="quantity-number">
+                                    <div class="quantity-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                                <span class="cart-price">$129</span>
+                                <div class="cart-remove">Видалити</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-footer">
+                        <div class="cart-footer-content">
+                            <h4>Разом :</h4>
+                            <span class="sum">$129</span>
+                        </div>
+                        <div class="cart-footer-btns">
+                            <div class="btn-show-bag">
+                                <a href="form.html">Переглянути кошик</a>
+                            </div>
+                            <div class="btn-purchase">
+                                <a href="">Перейти до оплати</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bg"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts-header">
+                    <h3>Контакти</h3>
+                    <div class="crumbs">
+                        <div class="crumbs-item"><a href="#">Головна</a></div>
+                        <div class="crumbs-item crumbs-decorate"></div>
+                        <div class="crumbs-item"><a href="#">Контакти</a></div>
+                    </div>
+                </div>
+                <ul class="contacts-text">
+                    <li>
+                        <span>Телефон</span>
+                        <a href="+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                    </li>
+                    <li>
+                        <span>E-mail</span>
+                        <a href="info@sitename.com">info@sitename.com</a>
+                    </li>
+                    <li>
+                        <span>Адреса</span>
+                        <p>м. Київ, вул.Хмельницького, 25</p>
+                    </li>
+                </ul>
+                <div class="contacts-form">
+                    <h3 class="contacts-form__title">Напишіть нам</h3>
+                    <form action="#">
+                        <input type="text" placeholder="Ваше ім'я" required>
+                        <input type="text" placeholder="E-mail" required>
+                        <input type="text" placeholder="Телефон" required>
+                        <textarea name="" id="" cols="40" rows="10" placeholder="Повідомлення"></textarea>
+                        <button type="submit">Відправити</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <div class="modal-callback">
+        <h3 class="callback-title">Замовити зворотний дзвінок</h3>
+        <i class="fa-solid fa-xmark"></i>
+        <form action="#" class="callback-form">
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Телефон" required>
+            <button type="submit">Замовити Дзвінок</button>
+        </form>
+    </div>
+    <div class="modal-answer">
+        <h3 class="answer-title">Чудово! Ми незабаром вам передзвонимо.</h3>
+        <div class="answer-button">Закрити</div>
+    </div>
+    <div class="green-bg"></div> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="" class="logo-link">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="footer-content__wrapper">
+                    <p>© Усі права захищені</p>
+                    <div class="content-links">
+                        <ul>
+                            <li><a href="">Політика конфіденційності</a></li>
+                            <li><a href="">Публічна оферта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                        <!-- <ul>
+                            <li>
+                                <a href="">Пальто</a>
+                            </li>
+                            <li>
+                                <a href="">Світшоти</a>
+                            </li>
+                            <li>
+                                <a href="">Кардигани</a>
+                            </li>
+                            <li>
+                                <a href="">Толстовки</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="about-brand.html">Про бренд</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="contacts-links">
+                    <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                    <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#insta"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="payment">
+                    <img src="img/visa-mastercard.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

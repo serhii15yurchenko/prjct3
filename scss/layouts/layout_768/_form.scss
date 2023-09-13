@@ -1,0 +1,245 @@
+.ordering {
+    padding-top: 190px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    .ordering-header {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 55px;
+            color: $black;
+            margin-bottom: 26px;
+            text-align: center;
+        }
+    }
+
+    .ordering-wrapper {
+        max-width: unset;
+        margin: unset;
+        
+
+        h3 {
+            text-align: left;
+        }
+
+        .form-ordering {
+        display: flex;
+        justify-content: space-between;
+
+            
+            .user-info {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0px;
+                width: 40%;
+                // unset
+
+                .first-title {
+                    font-size: 25px;
+                    font-weight: 500;
+                    // margin-bottom: 47px;
+                    margin-top: 0px;
+                }
+    
+                .second-title {
+                    font-size: 25px;
+                    font-weight: 500;
+                    // margin-bottom: 47px;
+                    margin-top: 80px;
+                }
+    
+                .third-title {
+                    font-size: 25px;
+                    font-weight: 500;
+                    // margin-bottom: 47px;
+                    margin-top: 80px;
+                }
+    
+                input {
+                    &::placeholder {
+                        font-size: 17px;
+                        font-family: $fontRaleway;
+                        font-weight: 500;
+                        color: #868686;
+                    }
+                    margin-top: 35px;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    height: 40px;
+                    outline: none;
+                    font-size: 17px;
+                    font-family: $fontRaleway;
+                }
+    
+                textarea {
+    
+                    &::placeholder {
+                        font-size: 17px;
+                        font-family: $fontRaleway;
+                        font-weight: 500;
+                        color: #868686;
+                    }
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    margin-top: 40px;
+                    height: 129px;
+                    resize: none;
+                    outline: none;
+                    font-size: 17px;
+                    font-family: $fontRaleway;
+                }
+            }
+
+            .ordering-info {
+                width: 45%;
+
+                .ordering-info-title {
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin-bottom: 50px;
+                }
+
+                .ordering-info-content {
+                    margin-bottom: 70px;
+                    // 140
+
+                    .ordering-content-titles {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: 24px;
+                        padding-right: 24px;
+
+                        h5 {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+
+                        
+                    }
+
+                    .ordering-list {
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        
+
+                        .ordering-item {
+                            font-size: 17px;
+                            font-weight: 500;
+                            margin-bottom: 30px;
+                            justify-content: space-between;
+                            display: flex;
+                            padding-left: 24px;
+                            padding-right: 24px;
+
+                            .ordering-item-name {
+                                margin-right: 30px;
+                                max-width: 180px;
+                            }
+                        }
+                    }
+
+                    .ordering-item__subtotal {
+                        font-size: 17px;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 25px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+
+                        
+                    }
+
+                    .ordering__total {
+                        font-size: 20px;
+                        font-weight: 500;
+                        padding: 15px 24px;
+                        background-color: #F1EADC;
+                        display: flex;
+                        justify-content: space-between;
+
+                        
+                    }
+                }
+            }
+
+            .ordering-payment {
+                display: flex;
+                flex-direction: column;
+
+                .ordering-payment-title {
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin-bottom: 47px;
+                }
+
+                .pay-checkbox {
+                    display: none;
+                }
+
+                .pay-checkbox + label {
+                    position: relative;
+                    margin: 0 0 48px;
+                    cursor: pointer;
+                    padding-left: 37px;
+                    letter-spacing: 0.028em;
+                }
+
+                .pay-checkbox:checked + label::before {
+                    width: 22px;
+                    height: 22px;
+                    top: 0;
+                    left: 0;
+                    background: url(../img/checkbox.svg)no-repeat center center;
+                    border: 1px solid #000000;
+                }
+
+                label {
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 22px;
+                        height: 22px;
+                        border: 1px solid #000000;
+                        margin-top: -5px;
+                    }
+                }
+
+                button {
+
+                    &:hover {
+                        background-color: $white;
+                        color: $green;
+                        border-color: $green;
+                        transition: all .2s ease-in-out;
+                    }
+                    padding: 22px 50px;
+                    background-color: $green;
+                    color: white;
+                    font-size: 17px;
+                    border: none;
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;
+                    border: 1px solid transparent;
+                }
+            }
+
+            
+        }
+
+
+    }
+}

@@ -1,0 +1,49 @@
+.contacts {
+    padding-top: 190px;
+    padding-bottom: 130px;
+
+    
+
+    .contacts-header {
+        align-items: flex-start;
+        margin-bottom: 150px;
+        
+    }
+
+    .contacts-text {
+        margin-bottom: 130px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+            &:not(:last-child) {
+                margin-bottom: unset;
+            }
+            
+            margin: 25px;
+            
+        }
+    }
+
+    .contacts-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__title {
+            margin-bottom: 62px;
+            text-align: center;
+            // 62
+        }
+
+        form {
+            
+            align-items: flex-start;
+
+            button {
+                margin: unset;
+            }
+        }
+       
+    }
+
+}

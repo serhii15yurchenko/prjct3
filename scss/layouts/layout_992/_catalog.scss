@@ -1,0 +1,21 @@
+.catalog {
+    padding-top: 190px;
+    padding-bottom: 130px;
+
+    .catalog-list {
+        grid-gap: 30px;
+        .catalog-item {
+
+            .link-photo {
+
+                img {
+                    width: 100%;
+                    max-width: 350px;
+                    object-fit: cover;
+                    height: 478px;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    
+
+    .navigation {
+        display: block;
+        
+    }
+
+    .call {
+        a {
+            display: block;
+        }
+    }
+
+    .cart-container {
+
+    }
+}
+
+.header-scroll {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

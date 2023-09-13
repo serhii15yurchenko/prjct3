@@ -1,0 +1,40 @@
+.catalog {
+    padding-top: 100px;
+    // 190
+    padding-bottom: 100px;
+    // 130
+    .container {
+        align-items: unset;
+        
+    }
+
+    .catalog-header {
+        // 214
+        .catalog-title {
+            text-align: left;
+        }
+    }
+
+    
+
+    .catalog-type {
+        
+        justify-content: flex-start;
+        max-width: unset;
+        .type-item {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            width: unset;
+            margin-bottom: 10px;         
+        }
+    }
+    .catalog-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+}
+
+.crumbs {
+    justify-content: flex-start;
+}

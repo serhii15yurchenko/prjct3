@@ -1,0 +1,38 @@
+.modal-answer {
+    position: fixed;
+    z-index: 7;
+    display: none;
+    top: 100px;
+    left: 50%;
+    right: -40%;
+    padding: 74px 70px 69px;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 600px;
+    background-color: $white;
+
+    .answer-title {
+        font-size: 25px;
+        margin-bottom: 39px;
+        font-weight: 500;
+    }
+
+    .answer-button {
+        &:hover {
+            background-color: #509498;
+            color: $white;
+            transition: all .2s ease-in-out;
+        }
+        color: $green;
+        border: 1px solid $green;
+        background-color: $white;
+        font-size: 17px;
+        padding: 22px 50px;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.modal-answer-open {
+    display: block;
+}
